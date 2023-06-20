@@ -1,0 +1,18 @@
+Instructions to compile:
+
+The required executables can be obtained by running the makefile using the 'make' command in the terminal. The executables and output files can be cleaned using the 'make clean' command.
+
+Instructions to run:
+
+The executable can be run using the following command which is similar as that given in the assignment 2 pdf that was given.
+
+./cw ­-i <double> ­-m <double> ­-n <double> ­-f <double> ­-s <double> -­T <int> -­o outfile.txt
+
+In the above command each tag and corresponding argument may be in any order and if any of -i <double>, ­-m <double> and ­-n <double> are omitted the default values are used. Other than this if there is any other variation in the command then it results in an 'Input error'. Each of these values also have corresponding ranges and if the value given is outside of that range it results in an 'Out of range error'.
+
+
+Instructions to test:
+
+For the purpose of testing I have written 2 python scripts. One is called plot1.py and this script plots the values from output.txt (CW values) which have been generated from the last run of the ./cw executable against update number. The second python script is called plot.py and it runs the executable for all the combinations of the cases given in assignment.pdf and plots all the corresponding graphs. Using this script conclusions were made about the variation of cw values for the different parameters that were given.
+
+These 2 scripts can be run using 'python3 plot1.py' and 'python3 plot.py' respectively. 

@@ -1,0 +1,21 @@
+Instructions to compile:
+
+The only code file present is the ospf.cpp file and this can be compiled using the following command:
+
+g++ -pthread ospf.cpp -o ospf
+
+Instructions to run and test:
+
+The executable obtained after compilation can be run using the following command:
+
+./ospf ­-i id -­f infile -­o outfile -­h hi -a lsai -­s spfi
+
+However in this command the -h, -a, -s and their corresponding arguments can be omitted as the code will take the default values. Here only the name of the in and out files without the extension must be given. i.e if the text file is input.txt, the argument must be "input".
+
+The code can be tested using the input file present in the folder.
+
+
+
+­
+
+

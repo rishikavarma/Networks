@@ -1,0 +1,16 @@
+The aim of this experiment is to simulate the implemention of OSPF routing in UDP for the application of finding shortest paths  through  the  nodes  using  Djikstra’s  algorithm. This  experiment  is parallel to the routing algorithm used during transmission in routers.
+The code is written in C++, and so is compiled using G++.  The algorithm involves using pthreads and mutexes.  Input files are also present which areused to test the authenticity of the experiment.  The first test file contains8 nodes and 21 links whereas the second test file contains 8 nodes and 20 links.
+The only code involved is ospf.cpp. This consists of 5 functions apart from main. Main is only involved in taking input and appropriately making threads for 4 of the functions. 
+
+The first function thread is hif. This function sends a message "HELLO <src_id>" periodically to all its neighbours.
+
+The next function thread is lsaf. This function periodically sends an lsa message which consists of the costs of links to all its neighbours. This message is also sent to all its neighbours.
+
+The third function thread is spff. This function periodically calculates the shortest path and its cost from the source node to all the other nodes and prints in the output file.
+
+The fourth function thread is hirf. This is involved in receiving all types of messages. If it recieves a hello message, it replies with a "HELLOREPLY j i <link_cost" message. If it receives a hello reply message, it takes the link cost and stores it appropriately. Similarly, if it gets an lsa message, it stores the data and then forwards it to all its neighbours. 
+
+From this experiment, I was able to learn about OSPF routing algorithm and how it is implemented. I was also able to see one of the many aspects in which Djikstra's algorithm is used in practice. I also saw the ways in which threads and Mutexes are used and its implementation. I learnt about UDP as well especially in multi client setting.
+
+Through this experiment we see the various aspects of OSPF routing and how the routers communicate with each other. Although it is not a full fledged model it captures the essence of the underlying algorithm by using UDP and similar communication messages. Through this simulation we could see how the shortest path is calculated and its variations.
+

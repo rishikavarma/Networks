@@ -1,0 +1,110 @@
+Routing Table for Node no.5 at time 20s :
+
+Destination        	Path          	Cost
+0      		 	No Path
+1      		 	No Path
+2      		 	No Path
+3      		 	No Path
+4      		 	No Path
+6      		 	No Path
+7      		 	No Path
+
+Routing Table for Node no.5 at time 40s :
+
+Destination        	Path          	Cost
+0 		            5-4-1-0		         116
+1 		            5-4-1		         113
+2 		            5-4-1-2		         125
+3 		            5-4-1-0-3		         141
+4 		            5-4		         31
+6 		            5-4-6		         57
+7 		            5-7		         57
+
+Routing Table for Node no.5 at time 60s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         63
+1 		            5-7-0-1		         64
+2 		            5-7-0-1-2		         76
+3 		            5-7-0-3		         97
+4 		            5-4		         59
+6 		            5-6		         66
+7 		            5-7		         13
+
+Routing Table for Node no.5 at time 80s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         94
+1 		            5-7-0-1		         102
+2 		            5-7-0-1-2		         128
+3 		            5-7-0-3		         120
+4 		            5-4		         54
+6 		            5-6		         62
+7 		            5-7		         33
+
+Routing Table for Node no.5 at time 100s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         116
+1 		            5-4-1		         126
+2 		            5-2		         140
+3 		            5-7-0-3		         150
+4 		            5-4		         56
+6 		            5-6		         74
+7 		            5-7		         47
+
+Routing Table for Node no.5 at time 120s :
+
+Destination        	Path          	Cost
+0 		            5-4-1-0		         114
+1 		            5-4-1		         110
+2 		            5-2		         139
+3 		            5-4-1-0-3		         140
+4 		            5-4		         38
+6 		            5-4-6		         69
+7 		            5-7		         47
+
+Routing Table for Node no.5 at time 140s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         124
+1 		            5-7-0-1		         132
+2 		            5-2		         140
+3 		            5-7-0-3		         157
+4 		            5-4		         58
+6 		            5-6		         65
+7 		            5-7		         61
+
+Routing Table for Node no.5 at time 160s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         87
+1 		            5-7-0-1		         93
+2 		            5-7-0-1-2		         110
+3 		            5-7-0-3		         119
+4 		            5-4		         36
+6 		            5-6		         62
+7 		            5-7		         29
+
+Routing Table for Node no.5 at time 180s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         84
+1 		            5-7-0-1		         89
+2 		            5-7-0-1-2		         102
+3 		            5-7-0-3		         113
+4 		            5-4		         40
+6 		            5-4-6		         63
+7 		            5-7		         34
+
+Routing Table for Node no.5 at time 200s :
+
+Destination        	Path          	Cost
+0 		            5-7-0		         75
+1 		            5-7-0-1		         81
+2 		            5-7-0-1-2		         94
+3 		            5-7-0-3		         111
+4 		            5-4		         34
+6 		            5-4-6		         66
+7 		            5-7		         27
+

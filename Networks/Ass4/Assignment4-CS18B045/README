@@ -1,0 +1,44 @@
+Instructions to compile:
+
+The required executables can be obtained by running the makefile using the 'make' command in the terminal. The executables and output files can be cleaned using the 'make clean' command.
+
+Instructions to run and test:
+
+Each set of executables obtained after compilation can be run using the following commands simultaneously on different terminals or machines:
+
+Selective repeat:
+
+./receiverSR -p <port> -N <max packets> -n <sequence bits> -W <window size> -B <buffer size> -e <error rate> -d <debug mode (optional)>
+
+./senderSR -s <IP address/name> -p <port> -L <Max packet length> -R <rate of packet generation> -N <max packets> -W <window size> -B <buffer size> -n <sequence bits> -d <debug mode (optional)>
+
+
+Go back N:
+
+./receiverGBN -p <port> -N <max packets> -n <sequence bits> -e <error rate> -d <debug mode (optional)>
+
+ ./senderGBN -s <IP address/name> -p <port> -l <Max packet length> -r <rate of packet generation> -N <max packets> -w <window size> -b <buffer size> -n <sequence bits> -d <debug mode (optional)>
+
+It is advised to run the receiver first and then sender as closely as possible.
+The port number used is 12345.
+
+The protocols when run will give the following values in the end:
+
+PACKET_GEN_RATE 
+PACKET_LENGTH
+Retransmission ratio
+RTT average
+
+
+If the debug tag is given, the program will also print additional information pertaining to the times and individual rtt of each  packet as follows:
+
+Sender:
+
+Seq__: Time Generated: __ : __ RTT: __ Number of attempts: __
+
+Receiver:
+
+Seq__: Time Recieved: __ : __
+
+To get the most accurate final values it is advised to run in the debug mode as the prints may cause lags.
+

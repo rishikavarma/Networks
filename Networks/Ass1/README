@@ -1,0 +1,81 @@
+Compilation instructions:
+
+Both client and server files are compiled using the makefile. Typing the "make" command in the corresponding directory will give executables of both files.
+
+Run instructions:
+
+
+Run the server using command "./servercode" in the corresponding directory.
+
+Run the client using command "./usercode <ip_address>" where the ip address given as argument is the ip address of the machine on which server is being run in the corresponding directory.
+
+Port number has been hardcoded in the code and so need not be given as argument.
+
+
+
+Testing instructions:
+
+Following are the commands and the corresponding results when given in the client terminal.
+
+Main Prompt commands:
+
+1) Listusers
+
+This command prints all the users that have been created separated by spaces. If there are no users it prints an empty line.
+
+2) Adduser <user_name>
+
+This command adds a new user by the name that is given. If that name already exists then new user is not added. The client prints a statement notifying regarding whether user has been added or not.
+
+3) Setuser <user_name>
+
+This command sets the user whose name is given and opens a sub prompt through which mails of that user can be read, deleted  and new mails can be sent to other users. It initialises pointer to the first mail. If no user exists with name that was given then user is not set. If user is set client prints a statement saying the same along with number of mails present else it prints a statement saying user wasnt set.
+
+4) Quit
+
+This command exits from the prompt, closes the socket and exits both server and client.
+
+Sub prompt commands:
+
+1) Read 
+
+This command prints the mail pointed to by the pointer in client terminal. If there are no mails it prints a message saying the same. The pointer then moves to point to the next mail. If it was the last mail, the pointer now points to the first mail. 
+
+2) Readmailnum <mail_num>
+
+This command prints the mail whose index is given by mail_num. The indexing starts from 1. If index of bigger than number of mails then a message indicating that index is invalid is printed by the client. The pointer then points to the mail following that which was just read. If there are no mails the same is printed.
+
+3) Delete
+
+This command deletes the mail pointed to by pointer. The pointer then moves to point to the next mail. If there are no mails then no deletion takes place. The client prints a message indicating whether or not deletion has happened.
+
+4) Deletemailnum <mail_num>
+
+This command deletes the mail whose index is given by mail_num. The indexing starts from 1. If index of bigger than number of mails then a message indicating that index is invalid is printed by the client. The pointer then points to the mail following that which was just read. If there are no mails the same is printed.
+
+
+5) Send <user_name>
+
+This command is responsible for sending a mail from the set user to the user whose name is given. On giving this command the prompt asks for message to be sent. The message is to be ended by ### in the end. This message is sent to the user whose name is given. If there is no user with the given name then message is not sent. Client prints a message indicating whether or not mail has been sent.
+
+6) Done
+
+This command removes the user that has been set and exits from the sub prompt to return back to the main prompt.
+
+In both prompts if in case any other instruction is given or if an argument is not given where necessary then the client prompts that the instruction is incorrect.
+
+Clean instructions :
+
+Running the "make clean" command cleans all the executables and spool files and resets the application state to initial state where all history of users has been deleted.
+
+References:
+
+The code for the basic set up of socket was based on the code given in the slides that were used during explanation of the assignment and its underlying prerequisite knowledge.
+Ref link provided: https://www.csd.uoc.gr/ hy556/material/tutorials/cs556-3rd-tutorial.pdf
+
+Additional information:
+
+This code was written and tested on the ubuntu 18.04 operating system.
+
+
+
